@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "package.json": "^2.0.1"
+  },
+  "name": "auc-sys",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shreya",
+  "license": "ISC",
+  "description": ""
+}
