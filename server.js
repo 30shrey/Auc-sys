@@ -15,7 +15,10 @@ const app = express();
 app.use(cors());
 
 //Handle JSON parsing properly
-app.use(express.json);
+app.use(express.json({
+    extended: false
+}));
+
 //Use the api group instead of multiple paths for multiple routes
 app.use("/api/furnitures", furnitures);
 
