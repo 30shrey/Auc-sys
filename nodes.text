@@ -1,0 +1,38 @@
+- add package.json
+- install few necessary packages
+-dotenv,body-parser,mongoose,express,
+create a basic node server
+-env file creation -
+-declare port
+-call the port from env file
+-add a notes file in gitignore
+-add custom  command in package.json
+-print the system variable in console
+-initiate the server and open the port
+-create config directory
+  -db connectivity file
+  -basic blueprint of a file(import,compoment,export,export module)
+  -try catch
+  -async await
+  import local modules
+  -install and implement cors
+  -implement json
+-create a models directory
+ -add a single model for furniture
+ -add a few datatypes in the json object -> String,date
+ -call the model in routes
+- add  a new routes 
+  -all furnitures routes
+  -basic skeleton
+    -CRUD method
+    -mongo functuion call
+    -show in frontend
+    -respond with a json and 404 error
+    -if successful show a dummy output on the reespective path/route
+  ->add all routes
+   -create
+   -update
+   -delete
+   -read
+   -search
+ 
