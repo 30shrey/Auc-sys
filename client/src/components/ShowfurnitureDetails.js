@@ -1,17 +1,18 @@
-import react, { useState} from 'react';
-import {Link} from 'react-router-dom';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+// import React, { useState, useEffect } from 'react';
+// import { Link, useParams, useNavigate } from 'react-router-dom';
+// import '../App.css';
+// import axios from 'axios';
 
-const ShowFurnitureDetails = () => {
-    return(
-        <div className='ShowFurnitureDetails'>
-             <div className='ShowFurnitureDetail'>
-                 <h1>This is ShowFurnitureDetails Page</h1>
-             </div>
-        </div>
-    );
-    
-}
+// function ShowfurnitureDetails() {
+//   return (
+//     <div className='ShowfurnitureDetails'>
+//       <div className='container'>
+//         <div className='row'>
+//          <h1>Shown Furniture Details</h1>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
-export default ShowFurnitureDetail;
+// export default ShowfurnitureDetails;

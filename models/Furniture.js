@@ -6,7 +6,7 @@ const FurnitureSchema = new mongoose.Schema({
         required: true
     },
     Price: {
-        type: Number;
+        type: Number,
         required: true
     },
     description: {
@@ -14,7 +14,7 @@ const FurnitureSchema = new mongoose.Schema({
         required: true
     },
     material: {
-        type: String;
+        type: String,
         required: true
     },
     brand: {
