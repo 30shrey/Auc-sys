@@ -1,7 +1,9 @@
- import React, { useState } from 'react';
+//  import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
- import axios from 'axios';
+//  import axios from 'axios';
 
+import Navbar from "./Navbar"
+import Footer from "./Footer"
  import { useNavigate } from 'react-router-dom';
 
 const CreateFurniture = (props) => {
@@ -24,6 +26,7 @@ const CreateFurniture = (props) => {
   // Define the state with useState hook
   return (
     <div className='CreateFurniture'>
+      <Navbar />
       <div className='container'>
         <div className='row'>
         <div className='col-md-8 m-auto'>
@@ -51,6 +54,7 @@ const CreateFurniture = (props) => {
             </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

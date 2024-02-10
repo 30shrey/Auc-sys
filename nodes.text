@@ -35,4 +35,9 @@ create a basic node server
    -delete
    -read
    -search
+   -add axios logic
+   -add basic design
+   -add react hooks
+   -add bootstrap cdn links in public/index.html
+   -
  
