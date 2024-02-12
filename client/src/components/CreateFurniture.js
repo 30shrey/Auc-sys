@@ -36,35 +36,11 @@ const CreateFurniture = (props) => {
         material: "",
         brand: ""
       })
-    //Show the success alert
-    toast.success('Book added successfully!', {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-      transition: Slide,
-    });
-
-    // Delay the navigation slightly to allow the toast to be seen
-    setTimeout(() => {
-      setShowToast(false); // Hide the toast
-      navigate('/'); // Navigate to homepage
-    }, 5000); // Adjust the timeout as needed
-
-  })
-    .catch ((err) => {
-  console.log('Error in CreateBook!');
-  console.log('The error is -> ')
-  console.log(err)
   // Show the success alert
 
-  toast.success('Book added successfully!', {
+  toast.success('Furniture added successfully!', {
     position: "top-right",
-    autoClose: 5000,
+    autoClose: 50,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
@@ -78,11 +54,11 @@ const CreateFurniture = (props) => {
   setTimeout(() => {
     setShowToast(false); // Hide the toast
     navigate('/'); // Navigate to homepage
-  }, 5000); // Adjust the timeout as needed
+  }, 50); // Adjust the timeout as needed
 
 })
     .catch ((err) => {
-  console.log('Error in CreateBook!');
+  console.log('Error in CreateFurniture!');
   console.log('The error is -> ')
   console.log(err)
   // Show the success alert
@@ -120,7 +96,7 @@ return (
               <input
                 type='text'
                 placeholder='Enter the product'
-                name='product'
+                name='Product'
                 className='form-control'
                 value={furniture.Product}
                 onChange={onChange}
@@ -143,7 +119,7 @@ return (
               <input
                 type='text'
                 placeholder='Description '
-                name='Price'
+                name='desciption'
                 className='form-control'
                 value={furniture.description}
                 onChange={onChange}
@@ -155,7 +131,7 @@ return (
               <input
                 type='text'
                 placeholder='Material of the product'
-                name='Price'
+                name='material'
                 className='form-control'
                 value={furniture.material}
                 onChange={onChange}
@@ -167,7 +143,7 @@ return (
               <input
                 type='text'
                 placeholder='Brand Name'
-                name='Price'
+                name='brand'
                 className='form-control'
                 value={furniture.brand}
                 onChange={onChange}
