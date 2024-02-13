@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 import Navbar from "./Navbar"
 import Footer from "./Footer"
-import { useNavigate } from 'react-router-dom';
+
 
 const CreateFurniture = (props) => {
 
   const navigate = useNavigate();
   const [furniture, setFurniture] = useState({
-    Product: '',
-    Price: '',
+    product: '',
+    price: '',
     description: '',
     material: '',
     brand: '',
@@ -28,19 +30,20 @@ const CreateFurniture = (props) => {
     e.preventDefault();
 
     //API calls with the help of axios
-    axios.post("api/furniture", furniture).then((res) => {
+    axios.post("api/furniture", furniture)
+    .then((res) => {
       setFurniture({
-        Product: "",
-        Price: "",
+        product: "",
+        price: "",
         description: "",
         material: "",
         brand: ""
-      })
+      });
   // Show the success alert
 
   toast.success('Furniture added successfully!', {
     position: "top-right",
-    autoClose: 50,
+    autoClose: 500,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
@@ -54,7 +57,7 @@ const CreateFurniture = (props) => {
   setTimeout(() => {
     setShowToast(false); // Hide the toast
     navigate('/'); // Navigate to homepage
-  }, 50); // Adjust the timeout as needed
+  }, 500); // Adjust the timeout as needed
 
 })
     .catch ((err) => {
@@ -64,7 +67,7 @@ const CreateFurniture = (props) => {
   // Show the success alert
   toast.error('Something went wrong, try again!', {
     position: "top-right",
-    autoClose: 5000,
+    autoClose: 500,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
@@ -79,6 +82,20 @@ const CreateFurniture = (props) => {
 return (
   <div className='CreateFurniture'>
     <Navbar />
+    <ToastContainer
+        position="top-right"
+        autoClose={500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Slide}
+      />
+
     <div className='container'>
       <div className='row'>
         <div className='col-md-8 m-auto'>
@@ -96,9 +113,9 @@ return (
               <input
                 type='text'
                 placeholder='Enter the product'
-                name='Product'
+                name='product'
                 className='form-control'
-                value={furniture.Product}
+                value={furniture.product}
                 onChange={onChange}
               />
             </div>
@@ -106,10 +123,10 @@ return (
             <div className='form-group'>
               <input
                 type='number'
-                placeholder='Price of the Product'
-                name='Price'
+                placeholder='price of the product'
+                name='price'
                 className='form-control'
-                value={furniture.Price}
+                value={furniture.price}
                 onChange={onChange}
               />
             </div>
@@ -119,7 +136,7 @@ return (
               <input
                 type='text'
                 placeholder='Description '
-                name='desciption'
+                name='description'
                 className='form-control'
                 value={furniture.description}
                 onChange={onChange}
@@ -149,13 +166,19 @@ return (
                 onChange={onChange}
               />
             </div>
+            <input
+                type='submit'
+                className='btn btn-outline-warning btn-block mt-4'
+              />
           </form>
         </div>
       </div>
     </div>
+
+
     <Footer />
   </div>
-);
+  );
 
 };
 

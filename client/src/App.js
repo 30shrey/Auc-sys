@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
 
 import CreateFurniture from './components/CreateFurniture'
-// import ShowFurnitureList from './components/ShowFurnitureList'
+import ShowFurnitureList from './components/ShowFurnitureList'
 // import ShowfurnitureDetails from './components/ShowfurnitureDetails'
 // import UpdateFurniture from './components/UpdateFurniture'
 function App () {
@@ -11,7 +11,7 @@ function App () {
      <Router>
        <div>
           <Routes>
-             {/* <Route exact path='/' element={<FurnitureCard />}/> */}
+             <Route exact path='/' element={<ShowFurnitureList />}/>
              {/* <Route path='/furniture-list'element={<ShowFurnitureList />}/> */}
              <Route  path='/create-furniture' element={<CreateFurniture />}/> 
              {/* <Route  path='/edit-furniture'element={<UpdateFurniture />}/>
