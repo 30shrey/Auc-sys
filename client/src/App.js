@@ -12,7 +12,7 @@ function App () {
        <div>
           <Routes>
              <Route exact path='/' element={<ShowFurnitureList />}/>
-             {/* <Route path='/furniture-list'element={<ShowFurnitureList />}/> */}
+             { <Route path='/furniture-list'element={<ShowFurnitureList />}/> }
              <Route  path='/create-furniture' element={<CreateFurniture />}/> 
              {/* <Route  path='/edit-furniture'element={<UpdateFurniture />}/>
              <Route  path='/show-furnituredetails/:id'element={<ShowfurnitureDetails />}/> */}

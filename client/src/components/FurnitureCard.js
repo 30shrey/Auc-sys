@@ -1,20 +1,28 @@
-// import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
-// import axios from 'axios';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import '../App.css'
 
-// import { useNavigate } from 'react-router-dom';
+const FurnitureCard = (props) => {
+  const furniture = props.furniture
 
-// const FurnitureCard = () => {
-//     // Define the state with useState hook
-//     return (
-//       <div className='FurnitureCard'>
-//         <div className='card-container'>
-//           <div className='row'>
-//           <h1>Created a FurnitureCard</h1>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   };
-  
-//   export default FurnitureCard;
+  return (
+    <div className='card-container'>
+      <img
+        src='https://www.pojfurniture.com/storage/products/230922055953-2.jpg'
+        alt='Furniture image'
+        height={200}
+      />
+      <div className='desc'>
+        <h2>
+          <Link to={ `/show-furniture/${furniture._id}` }>
+            {furniture.product  }
+          </Link> 
+        </h2>
+        <h3>{furniture.price}</h3>
+        <p>{furniture.description}</p>
+      </div>
+    </div>  
+  )
+}
+
+export default FurnitureCard
