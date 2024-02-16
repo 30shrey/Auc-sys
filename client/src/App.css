@@ -1,3 +1,5 @@
+/* AUTO-GENERATED CSS */
+
 .App {
   text-align: center;
 }
@@ -21,7 +23,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #3d362d;
 }
 
 .App-link {
@@ -35,4 +37,87 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* CUSTOM CSS */
+
+.CreateFurniture {
+  background-color: #c1d7ae;
+  min-height: 100vh;
+  color: #3d362d;
+}
+
+.ShowfurnitureDetails {
+  background-color: #c1d7ae;
+  min-height: 100vh;
+  color: #3d362d;
+}
+
+.UpdateFurnitureInfo {
+  background-color: #c1d7ae;
+  min-height: 100vh;
+  color: #3d362d;
+}
+
+.ShowFurnitureList {
+  background-color: #c1d7ae;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100px;
+  color: #3d362d;
+}
+
+
+.list {
+  display: grid;
+  margin: 20px 0 50px 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 2em;
+}
+
+
+.card-container {
+  width: 250px;
+  border: 1px solid #968e85;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.desc {
+  height: 130px;
+  padding: 10px;
+}
+
+.desc h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+
+.desc h3, p {
+  font-weight: 300;
+}
+
+.desc h3  {
+  color: #3d362d;
+  font-size: 1em;
+  padding: 10px 0 10px 0;
+}
+
+.navbarFooter-bg {
+  background-color: #8cc084;
+}
+
+.navbarFooter-text {
+  color: #000100;
+}
+
+.btn-warning {
+  background-color: #ffcab1;
+  color: #fd5f15;
 }

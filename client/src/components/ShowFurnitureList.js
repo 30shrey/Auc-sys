@@ -16,14 +16,14 @@ function ShowFurnitureList() {
         setFurnitures(res.data);
       })
       .catch((err) => {
-        console.log('Error from ShowFurnitureList ->');
+        console.log('Error from ShowFurnitureList ->')
         console.log(err)
       });
   }, []);
-  //  Logic for showing all the furnitures
+
   const furnitureList =
     furnitures.length === 0
-      ? 'there is no furniture list!'
+      ? 'there is no furniture record!'
       : furnitures.map((furniture, k) => <FurnitureCard furniture={furniture} key={k} />);
 
   return (
@@ -34,7 +34,7 @@ function ShowFurnitureList() {
         <div className='row'>
           <div className='col-md-12'>
             <br />
-            <h2 className='display-4 text-center'>Furnitures List</h2>
+            <h2 className='display-4 text-center'>Furniture List</h2>
           </div>
 
           <div className='col-md-11'>

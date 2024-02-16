@@ -19,6 +19,7 @@ const CreateFurniture = (props) => {
     brand: '',
   });
 
+  // Toast Hook Declaration
   const [showToast, setShowToast] = useState(false);
 
   const onChange = (e) => {
@@ -39,8 +40,8 @@ const CreateFurniture = (props) => {
           material: '',
           brand: '',
         });
-        // Show the success alert
 
+         // Toast Hook Call On Success
         toast.success('Furniture added successfully!', {
           position: "top-right",
           autoClose: 500,
@@ -50,7 +51,7 @@ const CreateFurniture = (props) => {
           draggable: true,
           progress: undefined,
           theme: "dark",
-          transition: Slide,
+          transition: {Slide},
         });
 
         // Delay the navigation slightly to allow the toast to be seen
@@ -64,7 +65,9 @@ const CreateFurniture = (props) => {
         console.log('Error in CreateFurniture!');
         console.log('The error is -> ')
         console.log(err)
-        // Show the success alert
+
+
+        // // Toast Hook Call On Failure
         toast.error('Something went wrong, try again!', {
           position: "top-right",
           autoClose: 500,
@@ -77,11 +80,22 @@ const CreateFurniture = (props) => {
           transition: {Slide},
         });
       });
+      axios.interceptors.response.use(
+        response => response,
+        error => {
+          if (error.response.status ===  401) {
+            // Handle  401 error here, such as redirecting to a login page
+          }
+          return Promise.reject(error);
+        }
+      );
   }
   // Define the state with useState hook
   return (
     <div className='CreateFurniture'>
       <Navbar />
+
+      {/* Toast Components */}
       <ToastContainer
         position="top-right"
         autoClose={500}
@@ -174,7 +188,6 @@ const CreateFurniture = (props) => {
           </div>
         </div>
       </div>
-
 
       <Footer />
     </div>

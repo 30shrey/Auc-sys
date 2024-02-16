@@ -1,7 +1,7 @@
 import React from "react";
 
 const Navbar = () => (
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning text-dark h-auto">
+    <nav class="navbar navbar-expand-lg bottom navbarFooter-bg navbarFooter-text h-auto">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Auction System</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
