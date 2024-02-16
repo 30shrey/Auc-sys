@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const FurnitureSchema = new mongoose.Schema({
-    Product: {
+    product: {
         type: String,
         required: true
     },
-    Price: {
+    price: {
         type: Number,
         required: true
     },
@@ -23,4 +23,6 @@ const FurnitureSchema = new mongoose.Schema({
     }
 
 })
- module.exports = furniture;
+module.exports = Furniture = mongoose.model('furniture', FurnitureSchema);
+
+

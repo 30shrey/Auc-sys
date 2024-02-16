@@ -40,4 +40,8 @@ create a basic node server
    -add react hooks
    -add bootstrap cdn links in public/index.html
    -
+
+- DB connectivity
+  - add dotenv module in server.js
+  - fix typos in routes, model, env file db url
  
