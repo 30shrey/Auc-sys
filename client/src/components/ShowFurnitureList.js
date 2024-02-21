@@ -29,7 +29,8 @@ function ShowFurnitureList() {
   return (
     <div className='ShowFurnitureList'>
       <Navbar />
-
+       <br></br>
+       <br></br>
       <div className='container'>
         <div className='row'>
           <div className='col-md-12'>
@@ -40,7 +41,7 @@ function ShowFurnitureList() {
           <div className='col-md-11'>
             <Link
               to='/create-furniture'
-              className='btn btn-outline-warning float-right'
+              className='btn btn-outline-dark float-right'
             >
               + Add New Furniture
             </Link>

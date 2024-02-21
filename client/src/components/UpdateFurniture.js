@@ -64,12 +64,13 @@ function UpdateFurniture(props) {
   return (
     <div className='UpdateFurnitureInfo'>
       <Navbar />
-      
+      <br></br>
+      <br></br>
       <div className='container'>
         <div className='row'>
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/furniture-list' className='btn btn-outline-warning float-left'>
+            <Link to='/furniture-list' className='btn btn-outline-dark float-left'>
               Show Furniture List
             </Link>
           </div>
@@ -144,7 +145,7 @@ function UpdateFurniture(props) {
                 onChange={onChange}
               />
             </div>
-            <br />
+             <br></br>
             <button
               type='submit'
               className='btn btn-outline-info btn-lg btn-block'

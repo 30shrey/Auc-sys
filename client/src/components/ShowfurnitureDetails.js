@@ -145,15 +145,11 @@ function ShowFurnitureDetails(props) {
                 </Link>
               </div>
               <div className='col-md-4'>
-                <Link to='/furniture-list' className='btn btn-outline-warning btn-lg btn-block'>
+                <Link to='/furniture-list' className='btn btn-outline-dark btn-lg btn-block'>
                   Show Furniture List
                 </Link>
               </div>
             </div>
-
-
-
-
           </div>
         </div>
       </div>
