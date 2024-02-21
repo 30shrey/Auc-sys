@@ -14,7 +14,7 @@ const FurnitureCard = (props) => {
       />
       <div className='desc'>
         <h2>
-          <Link to={ `/show-furniture/${furniture._id}` }>
+          <Link to={ `/show-furnituredetails/${furniture._id}` }>
             {furniture.product  }
           </Link> 
         </h2>

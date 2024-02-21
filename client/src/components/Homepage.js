@@ -20,7 +20,7 @@ const Home = (props) => {
         <h1 className='text'>AUCTION SYSTEM</h1>
         <p className='text1'>buy your most-liked fittings</p>
         </div>
-        <Link to='/create-furniture' className='btn btn-outline-light btn-lg hbtn'>
+        <Link to='/furniture-list' className='btn btn-outline-light btn-lg hbtn'>
               Let's GO!
             </Link>
             </div>

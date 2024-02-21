@@ -53,7 +53,7 @@ function UpdateFurniture(props) {
     axios
       .put(`/api/furnitures/${id}`, data)
       .then((res) => {
-        navigate(`/show-furniture/${id}`);
+        navigate(`/show-furnituredetails/${id}`);
       })
       .catch((err) => {
         console.log('Error in UpdateFurnitureInfo PUT request ->');
@@ -69,7 +69,7 @@ function UpdateFurniture(props) {
         <div className='row'>
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/' className='btn btn-outline-warning float-left'>
+            <Link to='/furniture-list' className='btn btn-outline-warning float-left'>
               Show Furniture List
             </Link>
           </div>

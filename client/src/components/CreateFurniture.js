@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Slide, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 import axios from 'axios';
 import Navbar from "./Navbar"
 import Footer from "./Footer"
@@ -51,7 +52,7 @@ const CreateFurniture = (props) => {
           draggable: true,
           progress: undefined,
           theme: "dark",
-          transition: {Slide},
+          transition: Slide,
         });
 
         // Delay the navigation slightly to allow the toast to be seen
@@ -115,7 +116,7 @@ const CreateFurniture = (props) => {
         <div className='row'>
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/' className='btn btn-outline-dark float-left'>
+            <Link to='/furniture-list' className='btn btn-outline-dark float-left'>
               Show Furniture List
             </Link>
           </div>

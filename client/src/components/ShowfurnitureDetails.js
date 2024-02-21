@@ -46,8 +46,8 @@ function ShowFurnitureDetails(props) {
         // Delay the navigation slightly to allow the toast to be seen
         setTimeout(() => {
           setShowToast(false); // Hide the toast
-          navigate('/'); // Navigate to homepage
-        }, 5000); // Adjust the timeout as needed
+          navigate('/furniture-list'); // Navigate to homepage
+        }, 500); // Adjust the timeout as needed
       })
       .catch((err) => {
         console.log('Error in CreateBook!');
@@ -71,6 +71,9 @@ function ShowFurnitureDetails(props) {
   return (
     <div className='ShowFurnitureDetails'>
       <Navbar />
+     <br></br>
+     <br /> 
+     <br />
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -142,7 +145,7 @@ function ShowFurnitureDetails(props) {
                 </Link>
               </div>
               <div className='col-md-4'>
-                <Link to='/' className='btn btn-outline-warning btn-lg btn-block'>
+                <Link to='/furniture-list' className='btn btn-outline-warning btn-lg btn-block'>
                   Show Furniture List
                 </Link>
               </div>
