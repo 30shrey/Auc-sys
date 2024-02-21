@@ -145,18 +145,17 @@ function UpdateFurniture(props) {
               />
             </div>
             <br />
-
             <button
               type='submit'
               className='btn btn-outline-info btn-lg btn-block'
             >
               Update Furniture
             </button>
-            <br /> <br />
+            <br />
+             <br />
           </form>
         </div>
       </div>
-
       <Footer />
     </div>
   );
