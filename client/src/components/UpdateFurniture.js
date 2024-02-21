@@ -5,7 +5,7 @@ import '../App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-function UpdateFurnitureInfo(props) {
+function UpdateFurniture(props) {
   const [furniture, setFurniture] = useState({
     product: '',
     price: '',
@@ -162,4 +162,4 @@ function UpdateFurnitureInfo(props) {
   );
 }
 
-export default UpdateFurnitureInfo;
+export default UpdateFurniture;
