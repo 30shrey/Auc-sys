@@ -56,7 +56,7 @@ router.post("/", (req, res) => {
 //@description  added  furnitures
 //@ access public
 //READ,UPDATE,SEARCH OPERATION  
-router.put("/", (req, res) => {
+router.put("/:id", (req, res) => {
    Furniture.findByIdAndUpdate(req.params.id, req.body)
       .then((furniture) => res.json({ msg: "Updatedsuccessfully" }))
       .catch((err) =>
@@ -69,7 +69,7 @@ router.put("/", (req, res) => {
 //@ access public
 //DELETE,SEARCH OPERATION  
 router.delete("/:id", (req, res) => {
-   Furniture.findByIdAndRemove(req.params.id, req.body)
+   Furniture.findByIdAndDelete(req.params.id, req.body)
       .then((furniture) => res.json({
          msg: "RemovedSuccessfully"
       }))

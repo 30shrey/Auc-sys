@@ -50,11 +50,11 @@ function ShowFurnitureDetails(props) {
         }, 500); // Adjust the timeout as needed
       })
       .catch((err) => {
-        console.log('Error in CreateBook!');
+        console.log('Error in CreateFurniture!');
         console.log('The error is -> ')
         console.log(err)
         // Show the success alert
-        toast.error('Error while deleting the book, please try again!', {
+        toast.error('Error while deleting the furniture, please try again!', {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
