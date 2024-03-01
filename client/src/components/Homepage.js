@@ -17,7 +17,7 @@ const Home = (props) => {
       
       <div className='text-end font-monospace hcls'>
         <div className='hdiv'>
-        <h1 className='text'>AUCTION SYSTEM</h1>
+        <h1 className='text'>ONLINE FURNITURE STORE</h1>
         <p className='text1'>buy your most-liked fittings</p>
         </div>
         <Link to='/furniture-list' className='btn btn-outline-light btn-lg hbtn'>

@@ -38,11 +38,13 @@
 }
 
 /* CUSTOM CSS */
- .Home {
+ .Home {    
     background: #2c4149;
     background-size: cover;
     min-height: 100vh;
-  }
+    background-image: "https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709251200&semt=ais" ;
+   }
+
   .text{
     font-size:70px;
     color: aliceblue;
@@ -132,20 +134,7 @@
   .shade5 {
     opacity: 0.9;
   }
-  
-  @keyframes ripple {
-    0% {
-      transform: scale(0.8);
-    }
-  
-    50% {
-      transform: scale(1.2);
-    }
-  
-    100% {
-      transform: scale(0.8);
-    }
-  }
+
 
 /* Custom Designs */
 .CreateFurniture {
